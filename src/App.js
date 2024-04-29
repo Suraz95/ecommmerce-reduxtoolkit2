@@ -4,7 +4,6 @@ import Main from "./Components/Main/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FilteredProducts from "./Components/FiltredProducts/FilteredProducts";
 import SingleProduct from "./Components/FiltredProducts/SingleProduct";
-import Login from "./Components/Login/Login";
 import { useSelector } from "react-redux";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={authUser ? <Main></Main> : <Login></Login>}
+            element={<Main></Main> }
           ></Route>
 
           <Route
